@@ -23,7 +23,7 @@ WORKDIR /tmp
 RUN git clone https://github.com/UCL/hemelb.git
 RUN mkdir hemelb/build && \
     cd hemelb/build && \
-    cmake .. && \
+    cmake .. -DHEMELB_STEERING_LIB=none -DHEMELB_USE_SSE3=ON && \
     make
 
 ##
