@@ -13,6 +13,7 @@ RUN apt-get update && \
     apt-get update
 
 RUN apt-get install -y \
+    git \
     libcgal-dev \
     libvtk5-dev \
     python-vtk \
